@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Households -->
+    <string name="feature_chores_title">Chores Anything</string>
+    <string name="feature_chores_account">Account</string>
+    <string name="feature_chores_new_household">New household</string>
+    <string name="feature_chores_household_name">Household name</string>
+    <string name="feature_chores_household_name_hint">For example “Home” or “The flat”.</string>
+    <string name="feature_chores_create">Create</string>
+    <string name="feature_chores_join_with_code">Join with a code</string>
+    <string name="feature_chores_join_title">Join a household</string>
+    <string name="feature_chores_invite_code">Invite code</string>
+    <string name="feature_chores_join">Join</string>
+    <string name="feature_chores_joining">Joining…</string>
+    <string name="feature_chores_join_done">You joined the household.</string>
+    <string name="feature_chores_join_already_member">You are already in that household.</string>
+    <string name="feature_chores_join_invalid_code">That code is not valid. Check it and try again.</string>
+    <string name="feature_chores_join_unavailable">Joining needs a connection. Try again in a moment.</string>
+    <string name="feature_chores_scan_code">Scan a QR code</string>
+    <string name="feature_chores_scan_not_invite">That code is not an invite to a household.</string>
+    <string name="feature_chores_scan_failed">The scanner did not open. Type the code instead.</string>
+    <string name="feature_chores_empty_title">No household yet</string>
+    <string name="feature_chores_empty_body">Make one for your home, or join the one someone shared with you. Chores on your own work too.</string>
+    <string name="feature_chores_error_title">The households could not be read</string>
+    <string name="feature_chores_retry">Try again</string>
+    <plurals name="feature_chores_member_count">
+        <item quantity="one">%d member</item>
+        <item quantity="other">%d members</item>
+    </plurals>
+    <string name="feature_chores_invitation_title">Invited to %1$s</string>
+    <string name="feature_chores_accept">Accept</string>
+    <string name="feature_chores_decline">Decline</string>
+    <string name="feature_chores_accept_household">Accept the invitation to %1$s</string>
+    <string name="feature_chores_decline_household">Decline the invitation to %1$s</string>
+    <string name="feature_chores_invitation_declined">Declined the invitation to %1$s</string>
+
+    <!-- One household -->
+    <string name="feature_chores_household_gone">That household is gone, or you are no longer in it.</string>
+    <string name="feature_chores_tab_today">Today</string>
+    <string name="feature_chores_tab_calendar">Calendar</string>
+    <string name="feature_chores_tab_history">History</string>
+    <string name="feature_chores_members">Members</string>
+    <string name="feature_chores_new_chore">New chore</string>
+    <string name="feature_chores_rename_household">Rename household</string>
+    <string name="feature_chores_leave_household">Leave household</string>
+    <string name="feature_chores_leave_confirm_text">You stop seeing its chores. Someone can invite you again.</string>
+    <string name="feature_chores_leave">Leave</string>
+    <string name="feature_chores_delete_household">Delete household</string>
+    <string name="feature_chores_delete_confirm_text">Every chore and the history go with it, for everyone in it. This cannot be undone.</string>
+    <string name="feature_chores_members_title">Who is in it</string>
+    <string name="feature_chores_roles_hint">Adults add chores that go through at once and confirm what kids ask for. Kids do chores and ask for new ones.</string>
+    <string name="feature_chores_role_adult">Adult</string>
+    <string name="feature_chores_role_kid">Kid</string>
+    <string name="feature_chores_make_role">Make %1$s</string>
+    <string name="feature_chores_you">%1$s (you)</string>
+    <string name="feature_chores_owner">Owner</string>
+    <string name="feature_chores_remove_member">Remove %1$s</string>
+    <string name="feature_chores_remove_member_confirm_text">%1$s stops seeing this household. The invite code changes, so the old one no longer works.</string>
+    <string name="feature_chores_remove">Remove</string>
+    <string name="feature_chores_invite_code_title">Invite with a code</string>
+    <string name="feature_chores_invite_code_hint">Anyone with this code can join. Say it, send it, or let them scan it.</string>
+    <string name="feature_chores_qr_hint">The code as a QR, for a phone next to yours.</string>
+    <string name="feature_chores_qr_description">QR code of the invite link</string>
+    <string name="feature_chores_share_code">Share</string>
+    <string name="feature_chores_share_text">Join “%1$s” on Chores Anything with the code %2$s, or tap %3$s</string>
+    <string name="feature_chores_reset_code">New code</string>
+    <string name="feature_chores_reset_code_confirm_title">Replace the invite code?</string>
+    <string name="feature_chores_reset_code_confirm_text">The old code and its link stop working. Anyone already in the household stays.</string>
+    <string name="feature_chores_invite_by_email_title">Invite by email</string>
+    <string name="feature_chores_email_label">Email address</string>
+    <string name="feature_chores_email_hint">They see the invitation when they sign in with that address.</string>
+    <string name="feature_chores_email_invalid">That does not look like an email address.</string>
+    <string name="feature_chores_invited">Invited %1$s.</string>
+    <string name="feature_chores_send_invite">Send the invitation</string>
+    <string name="feature_chores_cancel_invite">Cancel the invitation to %1$s</string>
+    <string name="feature_chores_invite_cancelled">Invitation to %1$s cancelled</string>
+
+    <!-- Days, times, rhythms -->
+    <string name="feature_chores_today">Today</string>
+    <string name="feature_chores_tomorrow">Tomorrow</string>
+    <string name="feature_chores_yesterday">Yesterday</string>
+    <string name="feature_chores_minutes">%1$d min</string>
+    <string name="feature_chores_hours">%1$d h</string>
+    <string name="feature_chores_hours_minutes">%1$d h %2$d min</string>
+    <string name="feature_chores_repeat_daily">Every day</string>
+    <string name="feature_chores_repeat_weekly">Every week</string>
+    <string name="feature_chores_repeat_fortnightly">Every two weeks</string>
+    <string name="feature_chores_repeat_monthly">Every month</string>
+
+    <!-- Today tab -->
+    <string name="feature_chores_no_chores_title">Nothing to do yet</string>
+    <string name="feature_chores_no_chores_body">Add the first chore: what, how it is done, who does it and when. Everyone in the household sees it.</string>
+    <string name="feature_chores_only_mine">Only mine</string>
+    <string name="feature_chores_nothing_for_you">Nothing for you right now.</string>
+    <plurals name="feature_chores_group_count">
+        <item quantity="one">%1$s · %2$d</item>
+        <item quantity="other">%1$s · %2$d</item>
+    </plurals>
+    <string name="feature_chores_group_needs_ok">Waiting for your OK</string>
+    <string name="feature_chores_group_waiting_ok">Waiting for an adult’s OK</string>
+    <string name="feature_chores_group_passed">Passed to you</string>
+    <string name="feature_chores_group_overdue">Overdue</string>
+    <string name="feature_chores_group_soon">This week</string>
+    <string name="feature_chores_group_later">Later</string>
+    <string name="feature_chores_group_whenever">Whenever</string>
+    <string name="feature_chores_group_done">Done today</string>
+    <string name="feature_chores_mark_done">Mark %1$s done</string>
+    <string name="feature_chores_done_snackbar">%1$s done</string>
+    <string name="feature_chores_passed_to">Passed to %1$s</string>
+    <string name="feature_chores_done_by">Done by %1$s</string>
+    <string name="feature_chores_anyone">Anyone</string>
+    <string name="feature_chores_confirm">Confirm</string>
+    <string name="feature_chores_take">Take it</string>
+    <string name="feature_chores_refuse">Not me</string>
+
+    <!-- Calendar tab -->
+    <string name="feature_chores_previous_month">Previous month</string>
+    <string name="feature_chores_next_month">Next month</string>
+    <plurals name="feature_chores_day_description">
+        <item quantity="one">%1$d, %2$d chore</item>
+        <item quantity="other">%1$d, %2$d chores</item>
+    </plurals>
+    <string name="feature_chores_add">Add</string>
+    <string name="feature_chores_nothing_planned">Nothing planned.</string>
+
+    <!-- History tab -->
+    <string name="feature_chores_history_empty_title">Nothing has happened yet</string>
+    <string name="feature_chores_history_empty_body">Every chore added, done, passed on or confirmed shows up here, with who and when.</string>
+    <string name="feature_chores_this_week">This week</string>
+    <plurals name="feature_chores_chores_done">
+        <item quantity="one">%d chore</item>
+        <item quantity="other">%d chores</item>
+    </plurals>
+    <string name="feature_chores_history_just_now">Just now</string>
+    <!-- %1$s is who, %2$s the chore, %3$s the other person. -->
+    <string name="feature_chores_history_added">%1$s added %2$s</string>
+    <string name="feature_chores_history_asked">%1$s asked for %2$s</string>
+    <string name="feature_chores_history_confirmed">%1$s confirmed %2$s for %3$s</string>
+    <string name="feature_chores_history_declined">%1$s declined %2$s</string>
+    <string name="feature_chores_history_changed">%1$s changed %2$s</string>
+    <string name="feature_chores_history_deleted">%1$s deleted %2$s</string>
+    <string name="feature_chores_history_done">%1$s did %2$s</string>
+    <string name="feature_chores_history_undone">%1$s undid %2$s</string>
+    <string name="feature_chores_history_passed">%1$s passed %2$s to %3$s</string>
+    <string name="feature_chores_history_took">%1$s took over %2$s</string>
+    <string name="feature_chores_history_refused">%1$s said no to %2$s</string>
+
+    <!-- Chore editor -->
+    <string name="feature_chores_edit_chore">Edit chore</string>
+    <string name="feature_chores_what">What</string>
+    <string name="feature_chores_how">How it is done</string>
+    <string name="feature_chores_how_hint">Where things are and what to do, so anyone can do it. “The broom is in the hall closet.”</string>
+    <string name="feature_chores_needs_title">What is needed</string>
+    <string name="feature_chores_add_need">Add something</string>
+    <string name="feature_chores_remove_need">Remove %1$s</string>
+    <string name="feature_chores_about_how_long">About how long, in minutes</string>
+    <string name="feature_chores_who">Who</string>
+    <string name="feature_chores_when">When</string>
+    <string name="feature_chores_pick_day">Pick a day</string>
+    <string name="feature_chores_any_time">Any time</string>
+    <string name="feature_chores_whenever">Whenever</string>
+    <string name="feature_chores_repeats">Repeats</string>
+    <string name="feature_chores_never">Never</string>
+    <string name="feature_chores_takes_turns">Takes turns</string>
+    <string name="feature_chores_takes_turns_hint">Each time it is done, the next person is up.</string>
+    <string name="feature_chores_takes_turns_list">Takes turns: %1$s</string>
+    <string name="feature_chores_reminder">Reminder</string>
+    <string name="feature_chores_reminder_none">None</string>
+    <string name="feature_chores_reminder_at_time">At the time</string>
+    <string name="feature_chores_reminder_before">%1$s before</string>
+    <string name="feature_chores_reminder_day_before">A day before</string>
+    <string name="feature_chores_kid_hint">An adult confirms it before it counts.</string>
+
+    <!-- One chore -->
+    <string name="feature_chores_chore_gone">That chore is gone.</string>
+    <string name="feature_chores_chore_deleted">Chore deleted.</string>
+    <string name="feature_chores_chore_declined">Chore declined.</string>
+    <string name="feature_chores_status_pending">Waiting for an adult to confirm it.</string>
+    <string name="feature_chores_status_passed">Passed to %1$s by %2$s. Waiting for an answer.</string>
+    <string name="feature_chores_status_done">Done by %1$s, %2$s.</string>
+    <string name="feature_chores_status_last_done">Last done by %1$s, %2$s.</string>
+    <string name="feature_chores_added_by">Added by %1$s</string>
+    <string name="feature_chores_done">Done</string>
+    <string name="feature_chores_take_anyone">I’ll do it</string>
+    <string name="feature_chores_pass_on">Pass on</string>
+    <string name="feature_chores_pass_to_title">Pass on to</string>
+    <string name="feature_chores_pass_to">Pass to %1$s</string>
+    <string name="feature_chores_delete_chore">Delete chore</string>
+    <string name="feature_chores_delete_chore_text">It goes for everyone in the household. The history keeps a line about it.</string>
+</resources>

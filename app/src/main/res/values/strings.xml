@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Chores Anything</string>
+
+    <string name="setup_needed_title">Set-up needed</string>
+    <string name="setup_needed_body">This build has no Firebase project behind it. Add app/google-services.json as the README describes and build again.</string>
+
+    <!-- The notification channels, as Android lists them in the app's settings. -->
+    <string name="channel_updates">What\'s happening at home</string>
+    <string name="channel_due">Reminders</string>
+
+    <!-- A chore's own reminder. The notification's title is the chore. -->
+    <string name="reminder_now">Time to start.</string>
+    <string name="reminder_at">Starts at %1$s.</string>
+    <!-- The morning notification. Its text lists the chores. -->
+    <plurals name="due_reminder_title">
+        <item quantity="one">%d chore today</item>
+        <item quantity="other">%d chores today</item>
+    </plurals>
+
+    <!-- Sent by firebase/functions/notify.js, which names each key and fills the arguments. -->
+    <string name="push_needs_ok">%1$s asks: %2$s</string>
+    <string name="push_assigned_by">%1$s gave you a chore: %2$s</string>
+    <string name="push_assigned">Now yours: %1$s</string>
+    <string name="push_added">%1$s added: %2$s</string>
+    <string name="push_confirmed">OK, it\'s on: %1$s</string>
+    <string name="push_declined">Not this time: %1$s</string>
+    <string name="push_passed">%1$s asks you to take over: %2$s</string>
+    <string name="push_took">%1$s took it: %2$s</string>
+    <string name="push_refused">%1$s can\'t take it: %2$s</string>
+    <string name="push_done">%1$s did it: %2$s</string>
+</resources>

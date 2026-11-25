@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="setup_needed_title">Χρειάζεται ρύθμιση</string>
+    <string name="setup_needed_body">Αυτή η έκδοση δεν έχει έργο Firebase πίσω της. Πρόσθεσε το app/google-services.json όπως λέει το README και ξαναφτιάξε την.</string>
+
+    <string name="channel_updates">Τι γίνεται στο σπίτι</string>
+    <string name="channel_due">Υπενθυμίσεις</string>
+
+    <string name="reminder_now">Ώρα να ξεκινήσεις.</string>
+    <string name="reminder_at">Ξεκινά στις %1$s.</string>
+    <plurals name="due_reminder_title">
+        <item quantity="one">%d δουλειά σήμερα</item>
+        <item quantity="other">%d δουλειές σήμερα</item>
+    </plurals>
+
+    <string name="push_needs_ok">%1$s ζητάει: %2$s</string>
+    <string name="push_assigned_by">%1$s σου έδωσε μια δουλειά: %2$s</string>
+    <string name="push_assigned">Δική σου πλέον: %1$s</string>
+    <string name="push_added">%1$s πρόσθεσε: %2$s</string>
+    <string name="push_confirmed">Εντάξει, ισχύει: %1$s</string>
+    <string name="push_declined">Όχι αυτή τη φορά: %1$s</string>
+    <string name="push_passed">%1$s σου ζητάει να αναλάβεις: %2$s</string>
+    <string name="push_took">%1$s το ανέλαβε: %2$s</string>
+    <string name="push_refused">%1$s δεν μπορεί να το αναλάβει: %2$s</string>
+    <string name="push_done">%1$s το έκανε: %2$s</string>
+</resources>

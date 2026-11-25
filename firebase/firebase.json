@@ -1,0 +1,47 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "emulators": {
+    "firestore": {
+      "port": 8080
+    },
+    "ui": {
+      "enabled": false
+    },
+    "singleProjectMode": true
+  },
+  "functions": {
+    "source": "functions",
+    "ignore": [
+      "node_modules",
+      "*.test.js"
+    ]
+  },
+  "hosting": {
+    "public": "hosting",
+    "redirects": [
+      {
+        "source": "/privacy",
+        "destination": "https://anykind-apps.com/chores-anything-privacy/",
+        "type": 301
+      },
+      {
+        "source": "/delete-account",
+        "destination": "https://anykind-apps.com/chores-anything-delete-account/",
+        "type": 301
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/.well-known/assetlinks.json",
+        "destination": "/assetlinks.json"
+      },
+      {
+        "source": "/join/**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

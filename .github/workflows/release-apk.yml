@@ -1,0 +1,58 @@
+# Every merge to main builds the debug APK (signed with app/debug.keystore, so Google
+# sign-in accepts it) and publishes it on a release page. The newest one is always at
+# https://github.com/Kokouliss/chores-anything/releases/latest/download/chores-anything.apk
+name: Release APK
+
+on:
+  push:
+    branches: [main]
+  # "Run workflow" on the Actions tab makes a new build of main by hand, for example after a
+  # release was made by hand and took the number the next merge would have used.
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-apk
+  cancel-in-progress: false
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - uses: gradle/actions/setup-gradle@v4
+      # With the real signing key (the four secrets under "Signing key" in the README) this is the
+      # optimized release build, plus chores-anything.aab, the bundle Google Play takes. Without them it is
+      # the debug build, signed with the shared debug key, and there is no bundle (Play refuses debug builds).
+      - run: |
+          if [ -n "$KEYSTORE_BASE64" ]; then
+            echo "$KEYSTORE_BASE64" | base64 -d > app/release.keystore
+            ./gradlew :app:assembleRelease :app:bundleRelease
+            cp app/build/outputs/apk/release/app-release.apk chores-anything.apk
+            cp app/build/outputs/bundle/release/app-release.aab chores-anything.aab
+          else
+            ./gradlew :app:assembleDebug
+            cp app/build/outputs/apk/debug/app-debug.apk chores-anything.apk
+          fi
+        env:
+          KEYSTORE_BASE64: ${{ secrets.RELEASE_KEYSTORE_BASE64 }}
+          RELEASE_KEYSTORE_PASSWORD: ${{ secrets.RELEASE_KEYSTORE_PASSWORD }}
+          RELEASE_KEY_ALIAS: ${{ secrets.RELEASE_KEY_ALIAS }}
+          RELEASE_KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
+      - uses: softprops/action-gh-release@v2
+        with:
+          tag_name: build-${{ github.run_number }}
+          name: Build ${{ github.run_number }}
+          generate_release_notes: true
+          # Explicitly the latest, so a release made by hand on the same commit cannot take the link.
+          make_latest: true
+          # The .aab exists only with the signing key; a missing file is only a warning here.
+          files: |
+            chores-anything.apk
+            chores-anything.aab
