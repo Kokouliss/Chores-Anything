@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "624155480981",
+    "project_id": "chores-anything",
+    "storage_bucket": "chores-anything.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624155480981:android:a7536eaedb65e354fbdc9c",
+        "android_client_info": {
+          "package_name": "com.kokouliss.choresanything"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "624155480981-erd7ddqi3416ke9i4p295vtet5drmg78.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbJz3PX5abkCOpI2iY9ZYxtfWCG9Z5XAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "624155480981-erd7ddqi3416ke9i4p295vtet5drmg78.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
